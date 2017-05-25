@@ -1,2 +1,14 @@
 # doupocangqiong_analysis
 网络小说&lt;斗破苍穹>的一个简单的分词与分析
+
+首先在doupo_fenci里面，实现了使用jieba对小说的分词。
+
+运行jieba_doupo.py可以对全文分词
+
+运行jieba_cixing.py可以对小说分词同时写入词性
+
+分词后会产生一个words_list.txt的文件，这个文件是后面两个分析的基础文件，应该把这个文件拷贝到另外两个文件夹里。
+
+在doupo_analysis里有两个分析，第一个分析是对所有的词做一个词频的分析，而第二个分析是对具体的类别做的分析
+
+在doupo_cixing里，按照形容词做了一个分析，这里要求分词文件是运行了jieba_fenci里的jieba_cixing.py的结果。
